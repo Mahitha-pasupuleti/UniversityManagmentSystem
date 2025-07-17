@@ -1,0 +1,68 @@
+1. Student
+@OneToOne → UserProfile
+
+@ManyToOne → Department
+
+@ManyToMany → Course (Enrolled Courses)
+
+@OneToMany → GradeRecord or Transcript
+
+2. Course
+@ManyToOne → Professor
+
+@ManyToMany → Student
+
+@OneToMany → Assignment
+
+3. Professor
+@OneToOne → UserProfile
+
+@OneToMany → Course
+
+4. Department
+@OneToMany → Student
+
+@OneToMany → Professor
+
+@OneToMany → Course
+
+5. Assignment / GradeRecord
+@ManyToOne → Course
+
+@ManyToOne → Student
+
+Contains: marks, feedback, etc.
+
+
+
+
+
+
+-------------------------------------------------
+One University has many departments
+Each department has one head
+Each department has many standard courses(5)
+Each course has many classes(5)
+Each class is assigned to one professor
+Each class has many students
+Students belong only to one department
+Students enroll in many courses, they take the course via a section
+Professor can take up many courses
+-------------------------------------------------
+
+Department
+- name
+- department-head
+- many courses
+
+Course
+- name
+- description
+- many sections
+- many students (?)
+
+Section
+- name
+- has one course
+- one professor
+- many students
