@@ -63,15 +63,7 @@ Each service is **independently deployable**, communicates via REST, and is stru
 ---
 
 ## 📦 ServiceName
-├── 📁 controller        # REST API endpoints
-├── 📁 service           # Business logic
-├── 📁 model             # Entity and DTO classes
-├── 📁 repository        # JPA repositories
-├── 📁 config            # Configuration classes (e.g., security, beans)
-├── 📁 exception         # Custom exceptions and handlers
-├── 📁 dto               # Data Transfer Objects (optional)
-└── 📄 application.properties / application.yml
-
+<pre> 📦 YourServiceName ├── 📁 controller # Handles API endpoints (REST controllers) ├── 📁 service # Contains business logic and service classes ├── 📁 model # Entity and domain models ├── 📁 repository # Spring Data JPA repositories ├── 📁 config # Security, beans, and service configurations ├── 📁 exception # Custom exceptions and global handlers ├── 📁 dto # Data Transfer Objects (optional) ├── 📁 util # Utility/helper classes (optional) └── 📄 application.properties or application.yml </pre>
 
 ---
 
