@@ -62,8 +62,9 @@ Each service is **independently deployable**, communicates via REST, and is stru
 
 ---
 
-## 📦 ServiceName
+## 📦 Folder Structure
 <pre> 
+  ### Service Name
   ├── 📁 controller       # Handles API endpoints (REST controllers) 
   ├── 📁 service          # Contains business logic and service classes 
   ├── 📁 entity            # Entity and domain models 
