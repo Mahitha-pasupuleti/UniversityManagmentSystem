@@ -64,10 +64,10 @@ Each service is **independently deployable**, communicates via REST, and is stru
 
 ## 📦 Folder Structure
 <pre> 
-  ### Service Name
+### Service Name
   ├── 📁 controller       # Handles API endpoints (REST controllers) 
   ├── 📁 service          # Contains business logic and service classes 
-  ├── 📁 entity            # Entity and domain models 
+  ├── 📁 entity           # Entity and domain models 
   ├── 📁 repository       # Spring Data JPA repositories 
   ├── 📁 config           # Security, beans, and service configurations 
   ├── 📁 exception        # Custom exceptions and global handlers 
