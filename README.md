@@ -1,4 +1,4 @@
-# 🎓 University Management System (Microservices-Based)
+# 🎓 EduSphere – A complete sphere of educational operations (Microservices-Based)
 
 A robust, secure, and scalable **University Management System** built using **Java + Spring Boot**, designed with a **microservices architecture**. This system manages core university operations like departments, courses, professors, students, and user authentication.
 
