@@ -62,12 +62,15 @@ Each service is **independently deployable**, communicates via REST, and is stru
 
 ---
 
-## 📂 Folder Structure (Per Service)
-├── controller
-├── service
-├── model
-├── repository
-└── config
+## 📦 ServiceName
+├── 📁 controller        # REST API endpoints
+├── 📁 service           # Business logic
+├── 📁 model             # Entity and DTO classes
+├── 📁 repository        # JPA repositories
+├── 📁 config            # Configuration classes (e.g., security, beans)
+├── 📁 exception         # Custom exceptions and handlers
+├── 📁 dto               # Data Transfer Objects (optional)
+└── 📄 application.properties / application.yml
 
 
 ---
